@@ -3692,7 +3692,7 @@
 		)
 	)
 	(global_label "TDO"
-		(shape input)
+		(shape output)
 		(at 218.44 73.66 180)
 		(effects
 			(font
@@ -3712,7 +3712,7 @@
 		)
 	)
 	(global_label "TCK"
-		(shape output)
+		(shape input)
 		(at 218.44 71.12 180)
 		(effects
 			(font
@@ -3732,7 +3732,7 @@
 		)
 	)
 	(global_label "TDI"
-		(shape output)
+		(shape input)
 		(at 218.44 81.28 180)
 		(effects
 			(font
@@ -3832,7 +3832,7 @@
 		)
 	)
 	(global_label "TMS"
-		(shape output)
+		(shape input)
 		(at 218.44 76.2 180)
 		(effects
 			(font
