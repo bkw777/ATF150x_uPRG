@@ -10,15 +10,13 @@ Includes a 12v supply for VPP on /OE1 to recover CPLDs that have JTAG disabled.
 ![](PCB/out/FT232H-ATF150x.b.jpg)
 ![](PCB/out/FT232H-ATF150x.svg)
 
-The JTAG port is Altera JTAG-A pinout, except with the addition that the normally nc pin 6 has /OE1 on it.
+To use the on-board 12V VPP supply to unlock a JTAG-connected device instead of the PLCC socket, connect a "dupont" wire from the center pin on the VPP jumper pin header to /OE1/VPP on your device in addition to the JTAG cable.
 
-If the 12V-/OE1 jumper is shorted, then 12V is supplied to /OE1 on both PLCC-44 socket pin 44 and JTAG pin 6.
-
-JTAG pin 6 is un-used in Altera JTAG-A pinout in JTAG mode, so most dev boards should be safely ignoring this pin, but to be safe, just don't enable the on-board 12V VPP supply when using the JTAG port to most dev boards.
-
-Future versions of [bkw777/ATF150x_uDEV](https://github.com/bkw777/ATF150x_uDEV) may route JTAG pin 6 to /OE1 to use this option.
-
-To use the on-board VPP supply with any other device (not using pin 6 from the JTAG), just connect a single "dupont" wire to the center 12V pin on the 12V-/OE1 jumper pin header and to /OE1 on your device, and use the JTAG as normal.
+Optional VPP-over-JTAG:  
+JTAG pin 6 wich is normally NC, is connected to /OE1.  
+This has no effect if the VPP jumper is set to OFF.  
+If the VPP jumper is set to /OE1, then 12V is supplied to both PLCC-44 Socket pin 44 and JTAG pin 6.  
+[bkw777/ATF150x_uDEV](https://github.com/bkw777/ATF150x_uDEV) includes a matching option to receive VPP on JTAG pin 6.
 
 # Credits
 Modified from [hackup.net ATF1504-FT232HQ Shield](https://www.hackup.net/2020/01/erasing-and-programming-the-atf1504-cpld/)
