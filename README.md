@@ -6,6 +6,7 @@ Includes a 12V supply for VPP on /OE1 to recover CPLDs that have JTAG disabled.
 
 ![](PCB/out/FT232H-ATF150x.jpg)
 ![](PCB/out/FT232H-ATF150x.2.jpg)
+![](PCB/out/FT232H-ATF150x.3.jpg)
 ![](PCB/out/FT232H-ATF150x.f.jpg)
 ![](PCB/out/FT232H-ATF150x.b.jpg)
 ![](PCB/out/FT232H-ATF150x.svg)
