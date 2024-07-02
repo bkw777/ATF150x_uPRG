@@ -1,6 +1,6 @@
-# FT232H-ATF150x Programmer
+# ATF150x Programmers based on FT232H modules
 
-ATF150x programmer in the form of a "hat" PCB for common FT232H USB modules like "CJMCU-232H".
+ATF150x programmer in the form of a "hat" PCB for common FT232H USB modules like CJMCU-232H or Adafruit 2264.
 
 Includes a 12V supply for VPP on /OE1 to recover CPLDs that have JTAG disabled.
 
