@@ -4,6 +4,14 @@ ATF150x programmer in the form of a "hat" PCB for common FT232H USB modules like
 
 Includes a 12V supply for VPP on /OE1 to recover CPLDs that have JTAG disabled.
 
+Adafruit 2264  
+![](PCB/out/ATF150x_uPRG_s.jpg)
+![](PCB/out/ATF150x_uPRG_s.2.jpg)
+![](PCB/out/ATF150x_uPRG_s.f.jpg)
+![](PCB/out/ATF150x_uPRG_s.b.jpg)
+![](PCB/out/ATF150x_uPRG_s.svg)
+
+CJMCU-232H  
 ![](PCB/out/FT232H-ATF150x.jpg)
 ![](PCB/out/FT232H-ATF150x.2.jpg)
 ![](PCB/out/FT232H-ATF150x.3.jpg)
