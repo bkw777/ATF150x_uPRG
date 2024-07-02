@@ -5,6 +5,7 @@ ATF150x programmer in the form of a "hat" PCB for common FT232H USB modules like
 Includes a 12V supply for VPP on /OE1 to recover CPLDs that have JTAG disabled.
 
 Adafruit 2264  
+Does not require soldering the Adafruit board to the uPRG board, nor requires sockets either.  
 ![](PCB/out/ATF150x_uPRG_s.jpg)
 ![](PCB/out/ATF150x_uPRG_s.2.jpg)
 ![](PCB/out/ATF150x_uPRG_s.f.jpg)
