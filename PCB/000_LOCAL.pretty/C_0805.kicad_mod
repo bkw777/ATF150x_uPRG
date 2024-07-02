@@ -6,7 +6,7 @@
 	(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 	(tags "capacitor")
 	(property "Reference" "REF**"
-		(at 0 -1.397 0)
+		(at 0 -1.68 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "748b2e42-8a67-4fcd-8eff-aa3682e30072")
@@ -18,7 +18,7 @@
 		)
 	)
 	(property "Value" "C_0805"
-		(at 0 1.524 0)
+		(at 0 1.68 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "e1cef26a-9b05-47d0-95ed-57ad6f7a78aa")
@@ -29,39 +29,39 @@
 			)
 		)
 	)
-	(property "Footprint" "C_0805"
-		(at 0 1.651 0)
-		(unlocked yes)
+	(property "Footprint" ""
+		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "8302005e-f72b-479d-a4e3-f10c21d3c5a8")
+		(uuid "4f4627fb-8143-4507-a8da-5a08a64a388e")
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
 	(property "Datasheet" ""
 		(at 0 0 0)
-		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "e409e5d7-234e-4d0f-893c-50687e83593f")
+		(uuid "507567fc-3443-4d97-9b4e-11fae3be570b")
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
 	(property "Description" ""
 		(at 0 0 0)
-		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "9095226d-dc80-4309-b207-ae0b3c84dbbd")
+		(uuid "b571fba7-b086-456f-85d1-cc446c85a1f8")
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -167,7 +167,7 @@
 		(uuid "8f48e2ee-4bde-4581-b821-e8812a62bf44")
 	)
 	(fp_text user "${REFERENCE}"
-		(at 0 -1.27 0)
+		(at 0 0 0)
 		(layer "F.Fab")
 		(uuid "c0d28e02-a811-416e-8ea3-8972062d277d")
 		(effects
@@ -179,19 +179,19 @@
 	)
 	(pad "1" smd roundrect
 		(at -0.95 0)
-		(size 1 1.45)
+		(size 0.9 1.45)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(roundrect_rratio 0.25)
 		(uuid "8fcab996-2ba6-4e37-8313-be9ac1a3cf10")
 	)
 	(pad "2" smd roundrect
 		(at 0.95 0)
-		(size 1 1.45)
+		(size 0.9 1.45)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(roundrect_rratio 0.25)
 		(uuid "1e36b295-7e96-456f-a51a-a71b62e7b4c1")
 	)
-	(model "${KIPRJMOD}/3d/C_0805.step"
+	(model "${KIPRJMOD}/000_LOCAL.pretty/3dshapes/C_0805.step"
 		(offset
 			(xyz 0 0 0)
 		)

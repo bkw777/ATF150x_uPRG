@@ -673,7 +673,7 @@
 		(remove_unused_layers no)
 		(uuid "9535fd40-d9cd-4dc3-9cc2-c301fe7a8417")
 	)
-	(model "${KIPRJMOD}/3d/PLCC44-THT-Socket.stp"
+	(model "${KIPRJMOD}/000_LOCAL.pretty/3dshapes/PLCC44-THT-Socket.stp"
 		(offset
 			(xyz 18.034 8.8265 0.7)
 		)
@@ -684,7 +684,7 @@
 			(xyz 0 0 -180)
 		)
 	)
-	(model "${KIPRJMOD}/3d/PLCC44.step"
+	(model "${KIPRJMOD}/000_LOCAL.pretty/3dshapes/PLCC44.step"
 		(offset
 			(xyz -1.27 -6.35 3.3)
 		)

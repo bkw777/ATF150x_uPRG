@@ -481,7 +481,7 @@
 		(remove_unused_layers no)
 		(uuid "9b999f4e-48b7-48e9-9916-ad90401c64fc")
 	)
-	(model "${KIPRJMOD}/3d/IDC-Header_2x05_P2.54mm_Vertical.step"
+	(model "${KIPRJMOD}/000_LOCAL.pretty/3dshapes/IDC-Header_2x05_P2.54mm_Vertical.step"
 		(offset
 			(xyz 0 0 0)
 		)
