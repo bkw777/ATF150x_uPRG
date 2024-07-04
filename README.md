@@ -5,25 +5,14 @@ ATF150x programmer in the form of a "hat" PCB for common FT232H USB modules like
 Includes a 12V supply for VPP on /OE1 to recover CPLDs that have JTAG disabled.
 
 Adafruit 2264  
-* Uses Adafruit 2264 module
-* Resistors on the JTAG data lines  
-* MAX662A always on, VPP on/off by disconnecting VPP  
-* Solder pins to the bottom of Adafruit board.
-* Does not require soldering the Adafruit board to the uPRG board, nor sockets.  
-  Adafruit board remains bread-board friendly and re-usable.
-* Switches instead of jumpers
-* LEDs
-![](PCB/out/ATF150x_uPRG_s.jpg)
-![](PCB/out/ATF150x_uPRG_s.2.jpg)
-![](PCB/out/ATF150x_uPRG_s.f.jpg)
-![](PCB/out/ATF150x_uPRG_s.b.jpg)
-![](PCB/out/ATF150x_uPRG_s.svg)
+![](PCB/out/ATF150x_uPRG.jpg)
+![](PCB/out/ATF150x_uPRG.2.jpg)
+![](PCB/out/ATF150x_uPRG.3.jpg)
+![](PCB/out/ATF150x_uPRG.f.jpg)
+![](PCB/out/ATF150x_uPRG.b.jpg)
+![](PCB/out/ATF150x_uPRG.svg)
 
 CJMCU-232H  
-* Uses "CJMCU-232H" module  
-* No resistors on the JTAG data lines  
-* VPP on/off via shutdown pin on the MAX662A  
-* Solder pins to the top of the CJMCU board  
 ![](PCB/out/ATF150x_232H.jpg)
 ![](PCB/out/ATF150x_232H.2.jpg)
 ![](PCB/out/ATF150x_232H.3.jpg)
