@@ -10,7 +10,9 @@ Adafruit 2264
 * MAX662A always on, VPP on/off by disconnecting VPP  
 * Solder pins to the bottom of Adafruit board.
 * Does not require soldering the Adafruit board to the uPRG board, nor sockets.  
-  Adafruit board remains bread-board friendly and re-usable.  
+  Adafruit board remains bread-board friendly and re-usable.
+* Switches instead of jumpers
+* LEDs
 ![](PCB/out/ATF150x_uPRG_s.jpg)
 ![](PCB/out/ATF150x_uPRG_s.2.jpg)
 ![](PCB/out/ATF150x_uPRG_s.f.jpg)
@@ -29,16 +31,13 @@ CJMCU-232H
 ![](PCB/out/ATF150x_232H.b.jpg)
 ![](PCB/out/ATF150x_232H.svg)
 
-To use the on-board 12V VPP supply to unlock a device connected by JTAG instead of the PLCC socket, connect a "dupont" wire from the 12V pin on the VPP jumper pin header to /OE1/VPP on your device in addition to the JTAG cable.
+## VPP-over-JTAG
+When VPP is ON, 12V is supplied to JTAG pin 6 and PLCC pin 44.  
+This forces the JTAG pins to be enabled even if the device is currently programmed with the JTAG pins disabled (used as ordinary I/O pins).
 
-## Optional VPP-over-JTAG
-JTAG pin 6 is connected to /OE1.  
-When the VPP jumper is set to /OE1, then 12V is supplied to both PLCC-44 Socket pin 44 and JTAG pin 6.  
-[bkw777/ATF150x_uDEV](https://github.com/bkw777/ATF150x_uDEV) includes a matching option to receive VPP on JTAG pin 6.
-
-When the VPP jumper is set to OFF, the /OE1 connection has no effect and the JTAG port is the same as any other [Altera JTAG-A](PCB/datasheets/JTAG-A.pfd) port.  
-Even when VPP is enabled, it will still usually have no effect on JTAG, since pin 6 is not used and not connected to anything on most devices and programmers.  
-But 12V is 12V, so **Don't enable VPP with an unknown device connected to JTAG**  
+[ATF150x_uDEV](https://github.com/bkw777/ATF150x_uDEV) includes a matching option to receive VPP on JTAG pin 6.
+  
+JTAG pin 6 should normally be NC for most Altera JTAG-A targets, but 12V is 12V, so **Don't enable VPP with an unknown device connected to JTAG**  
 
 # Credits
 Modified from [hackup.net ATF1504-FT232HQ Shield](https://www.hackup.net/2020/01/erasing-and-programming-the-atf1504-cpld/)
