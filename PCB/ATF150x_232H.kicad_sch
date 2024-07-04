@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "ATF150x_232H")
-		(date "2024-07-03")
-		(rev "003")
+		(date "2024-07-04")
+		(rev "004")
 		(company "Brian K. White")
 		(comment 1 "CC-BY-SA")
 		(comment 2 "github.com/bkw777/ATF150x_uPRG")

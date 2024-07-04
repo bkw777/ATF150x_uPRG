@@ -4875,7 +4875,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "datasheets/MAX622A.pdf"
+		(property "Datasheet" "datasheets/MAX662A.pdf"
 			(at 0 -6.35 0)
 			(effects
 				(font
