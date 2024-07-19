@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "ATF150x_232H")
-		(date "2024-07-04")
-		(rev "004")
+		(date "2024-07-18")
+		(rev "005")
 		(company "Brian K. White")
 		(comment 1 "CC-BY-SA")
 		(comment 2 "github.com/bkw777/ATF150x_uPRG")
@@ -2930,10 +2930,22 @@
 		)
 	)
 	(junction
+		(at 63.5 154.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0b3cfc90-3cb8-400b-a2a9-93de6ad46df8")
+	)
+	(junction
 		(at 111.76 161.29)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "11ce6d83-b032-40cf-aa6f-880af3a671a3")
+	)
+	(junction
+		(at 69.85 154.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "12c9c4f3-398b-4f85-b808-4b685d26a54c")
 	)
 	(junction
 		(at 63.5 101.6)
@@ -2942,16 +2954,10 @@
 		(uuid "2b357523-8a24-492f-a367-b37a84af7b24")
 	)
 	(junction
-		(at 88.9 139.7)
+		(at 63.5 161.29)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "2d000c71-1250-47ef-8dd3-d9c1158531ad")
-	)
-	(junction
-		(at 77.47 144.78)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "403c5020-96ec-4021-ae0a-099327a9a724")
+		(uuid "3bb31cec-81df-49cd-a714-339fffb6a012")
 	)
 	(junction
 		(at 129.54 119.38)
@@ -2966,28 +2972,22 @@
 		(uuid "4c97a781-b859-448d-ab8a-6b1d861adec9")
 	)
 	(junction
-		(at 83.82 139.7)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "54aaf32e-8bcf-4265-a329-0d2b078edaf8")
-	)
-	(junction
 		(at 129.54 124.46)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "63733f46-21f6-4f9a-936d-450c2e931f73")
 	)
 	(junction
-		(at 71.12 144.78)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "64ceef55-14e3-4dbb-89c8-ba34c6190d1f")
-	)
-	(junction
 		(at 111.76 177.8)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6da22ce4-7bdc-4ac3-afab-9fcc9caa1dc1")
+	)
+	(junction
+		(at 69.85 149.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "707448fe-33d1-4b28-87c7-90b433321e17")
 	)
 	(junction
 		(at 88.9 177.8)
@@ -3014,16 +3014,22 @@
 		(uuid "a5835cdd-22dc-476c-b8a3-d38045ccc8f0")
 	)
 	(junction
-		(at 77.47 139.7)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b3143818-d5a2-4751-8a7e-0dd8ac5afd81")
-	)
-	(junction
 		(at 105.41 161.29)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bb0cae90-4b48-433d-b05f-da5d5173397a")
+	)
+	(junction
+		(at 88.9 149.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "da053fbc-97c6-473d-a2c5-e52346d8e040")
+	)
+	(junction
+		(at 76.2 149.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e4fe3ca5-b133-4f41-a816-beae9e8ab35c")
 	)
 	(junction
 		(at 135.89 119.38)
@@ -3120,7 +3126,7 @@
 		(uuid "81a63a7f-5130-453c-87bd-2ff1206ace9b")
 	)
 	(no_connect
-		(at 63.5 158.75)
+		(at 101.6 152.4)
 		(uuid "86b7dc04-95bf-4501-9921-96909b9fcc04")
 	)
 	(no_connect
@@ -3301,7 +3307,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 144.78) (xy 50.8 177.8)
+			(xy 63.5 154.94) (xy 63.5 161.29)
 		)
 		(stroke
 			(width 0)
@@ -3331,7 +3337,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 177.8) (xy 88.9 177.8)
+			(xy 63.5 177.8) (xy 88.9 177.8)
 		)
 		(stroke
 			(width 0)
@@ -3341,33 +3347,13 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 139.7) (xy 83.82 139.7)
+			(xy 63.5 161.29) (xy 63.5 177.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "37c3f613-a4c6-464b-a619-8e9f670762ad")
-	)
-	(wire
-		(pts
-			(xy 77.47 144.78) (xy 83.82 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3b1dd95e-5e31-4c38-a1d2-714a0c1508a1")
-	)
-	(wire
-		(pts
-			(xy 71.12 144.78) (xy 77.47 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "40400049-34e0-4a45-8a54-9fccc6cf8e9d")
+		(uuid "31d42bf8-6d55-4d09-84ea-dc3c6098f9b5")
 	)
 	(wire
 		(pts
@@ -3391,17 +3377,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 161.29) (xy 77.47 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4e369fc2-1605-44a5-8e13-b86e7f01b6ce")
-	)
-	(wire
-		(pts
-			(xy 71.12 139.7) (xy 77.47 139.7)
+			(xy 63.5 149.86) (xy 69.85 149.86)
 		)
 		(stroke
 			(width 0)
@@ -3471,16 +3447,6 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 139.7) (xy 88.9 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "66be7bc5-8d59-47f7-bafc-a2c570bc6644")
-	)
-	(wire
-		(pts
 			(xy 73.66 166.37) (xy 77.47 166.37)
 		)
 		(stroke
@@ -3488,26 +3454,6 @@
 			(type default)
 		)
 		(uuid "70a37fb4-5171-46f5-9f8d-eb13aa7d4b81")
-	)
-	(wire
-		(pts
-			(xy 50.8 144.78) (xy 71.12 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "72211a72-c525-4a83-a4fc-8768d7415baf")
-	)
-	(wire
-		(pts
-			(xy 88.9 139.7) (xy 88.9 149.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "97837564-60d1-4083-a392-776db9ae7cb8")
 	)
 	(wire
 		(pts
@@ -3541,6 +3487,16 @@
 	)
 	(wire
 		(pts
+			(xy 69.85 154.94) (xy 76.2 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc771808-7d77-4f39-ada0-e9decc8b075f")
+	)
+	(wire
+		(pts
 			(xy 100.33 166.37) (xy 104.14 166.37)
 		)
 		(stroke
@@ -3548,6 +3504,16 @@
 			(type default)
 		)
 		(uuid "be2decd7-5bd7-4749-95c8-bc0b6f9585bb")
+	)
+	(wire
+		(pts
+			(xy 63.5 161.29) (xy 77.47 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c20e6590-aed0-4a52-9bb0-f18d2fe96d34")
 	)
 	(wire
 		(pts
@@ -3571,6 +3537,16 @@
 	)
 	(wire
 		(pts
+			(xy 76.2 149.86) (xy 88.9 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce8fc773-890a-4fef-9773-61db8f6fc49e")
+	)
+	(wire
+		(pts
 			(xy 63.5 101.6) (xy 76.2 101.6)
 		)
 		(stroke
@@ -3591,6 +3567,16 @@
 	)
 	(wire
 		(pts
+			(xy 88.9 149.86) (xy 101.6 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6a8927f-703c-431e-8159-7f13f41dfec9")
+	)
+	(wire
+		(pts
 			(xy 118.11 161.29) (xy 118.11 162.56)
 		)
 		(stroke
@@ -3598,6 +3584,26 @@
 			(type default)
 		)
 		(uuid "daf674c7-4dad-4159-a2bd-df4e52c856d9")
+	)
+	(wire
+		(pts
+			(xy 69.85 149.86) (xy 76.2 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df64c1fb-f7c3-410c-af87-53fb45312c1e")
+	)
+	(wire
+		(pts
+			(xy 63.5 154.94) (xy 69.85 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2a1ebc8-c967-4cee-af85-c5440176dbb4")
 	)
 	(wire
 		(pts
@@ -4452,7 +4458,7 @@
 	)
 	(symbol
 		(lib_id "ATF2FT232HQ-rescue:+5V-power")
-		(at 88.9 139.7 0)
+		(at 101.6 147.32 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4460,7 +4466,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005dd61f2e")
 		(property "Reference" "#PWR0110"
-			(at 88.9 143.51 0)
+			(at 101.6 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4469,7 +4475,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 89.281 135.3058 0)
+			(at 101.981 142.9258 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4477,7 +4483,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 88.9 139.7 0)
+			(at 101.6 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4486,7 +4492,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 88.9 139.7 0)
+			(at 101.6 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4495,7 +4501,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 88.9 139.7 0)
+			(at 101.6 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4987,72 +4993,6 @@
 		)
 	)
 	(symbol
-		(lib_id "ATF2FT232HQ-rescue:GND-power")
-		(at 63.5 163.83 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "812ca19d-e9dd-4108-8804-f9a72e88928a")
-		(property "Reference" "#PWR012"
-			(at 63.5 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 63.627 168.2242 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 63.5 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 63.5 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 63.5 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "700af998-7abc-46e6-8e51-0ef6ba092242")
-		)
-		(instances
-			(project "FT232H-ATF150x"
-				(path "/3e45ca3e-9961-418d-8cac-a91b9d092e47"
-					(reference "#PWR012")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_name "Jumper_3_Bridged12_1")
 		(lib_id "000_LOCAL:Jumper_3_Bridged12")
 		(at 76.2 104.14 270)
@@ -5259,7 +5199,7 @@
 	)
 	(symbol
 		(lib_id "000_LOCAL:C")
-		(at 83.82 142.24 0)
+		(at 76.2 152.4 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5267,7 +5207,7 @@
 		(dnp no)
 		(uuid "9f9d6e7d-643c-4af5-9c43-9263d90cbc7a")
 		(property "Reference" "C9"
-			(at 85.852 141.224 0)
+			(at 78.232 151.384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5276,7 +5216,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 85.852 143.51 0)
+			(at 78.232 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5285,7 +5225,7 @@
 			)
 		)
 		(property "Footprint" "000_LOCAL:C_0805"
-			(at 83.82 142.24 0)
+			(at 76.2 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5294,7 +5234,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 83.82 142.24 0)
+			(at 76.2 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5303,7 +5243,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 83.82 142.24 0)
+			(at 76.2 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5532,7 +5472,7 @@
 	)
 	(symbol
 		(lib_id "000_LOCAL:C")
-		(at 77.47 142.24 0)
+		(at 69.85 152.4 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5540,7 +5480,7 @@
 		(dnp no)
 		(uuid "bd083cb5-33fc-4adf-ab6d-36006489753a")
 		(property "Reference" "C8"
-			(at 79.502 141.224 0)
+			(at 71.882 151.384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5549,7 +5489,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 79.502 143.51 0)
+			(at 71.882 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5558,7 +5498,7 @@
 			)
 		)
 		(property "Footprint" "000_LOCAL:C_0805"
-			(at 77.47 142.24 0)
+			(at 69.85 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5567,7 +5507,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 77.47 142.24 0)
+			(at 69.85 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5576,7 +5516,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 77.47 142.24 0)
+			(at 69.85 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6148,7 +6088,7 @@
 	)
 	(symbol
 		(lib_id "000_LOCAL:C")
-		(at 71.12 142.24 0)
+		(at 63.5 152.4 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6156,7 +6096,7 @@
 		(dnp no)
 		(uuid "e608202a-dec0-4a3c-b3ba-8d5582191e8e")
 		(property "Reference" "C7"
-			(at 73.152 141.224 0)
+			(at 65.532 151.384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6165,7 +6105,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 73.152 143.51 0)
+			(at 65.532 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6174,7 +6114,7 @@
 			)
 		)
 		(property "Footprint" "000_LOCAL:C_0805"
-			(at 71.12 142.24 0)
+			(at 63.5 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6183,7 +6123,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 71.12 142.24 0)
+			(at 63.5 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6192,7 +6132,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 71.12 142.24 0)
+			(at 63.5 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6287,7 +6227,7 @@
 	(symbol
 		(lib_name "Jumper_3_Bridged12_1")
 		(lib_id "000_LOCAL:Jumper_3_Bridged12")
-		(at 63.5 161.29 90)
+		(at 101.6 149.86 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim yes)
@@ -6296,7 +6236,7 @@
 		(dnp no)
 		(uuid "e7bf99bd-7e57-481d-a558-91fc6176d9fe")
 		(property "Reference" "JP2"
-			(at 58.42 160.0199 90)
+			(at 106.68 151.1301 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6305,7 +6245,7 @@
 			)
 		)
 		(property "Value" "VPP"
-			(at 58.42 162.5599 90)
+			(at 106.68 148.5901 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6314,7 +6254,7 @@
 			)
 		)
 		(property "Footprint" "000_LOCAL:PinHeader_1x03_P2.54mm_Vertical"
-			(at 59.69 161.29 0)
+			(at 105.41 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6323,7 +6263,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 63.5 162.56 0)
+			(at 101.6 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6332,7 +6272,7 @@
 			)
 		)
 		(property "Description" "Jumper, 3-pole, pins 1+2 closed/bridged"
-			(at 63.5 162.56 0)
+			(at 101.6 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
