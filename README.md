@@ -30,8 +30,8 @@ The CJMCU-232H version:
 
 ## Adafruit 2264  
 
-DigiKey BOM (including the Adafruit 2264 and JTAG cable):  
-https://www.digikey.com/short/pd883vn2
+DigiKey BOM (including the Adafruit 2264 and 2 types of JTAG cable):  
+https://www.digikey.com/short/nvr0cz3h
 
 ![](PCB/out/ATF150x_uPRG.jpg)
 ![](PCB/out/ATF150x_uPRG.2.jpg)
