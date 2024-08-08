@@ -4,6 +4,30 @@ ATF150x programmer in the form of a "hat" PCB for common FT232H USB modules like
 
 Includes a 12V supply for VPP on /OE1 to recover CPLDs that have JTAG disabled.
 
+There are 2 versions. Both versions provide:  
+* FT232H
+* 10-pin JTAG port with ATMEL/ALtera JTAG-A pinout
+* 12V power supply for VPP
+* Optional 12V VPP out on JTAG pin 6
+* JTAG VCC switchable:
+  * programmer supplies 3V3 VCC to target
+  * programmer supplies 5V VCC to target
+  * target supplies own VCC
+
+The Adafruit 2264 version:  
+* USB-C
+* Connect to 2264 without sockets
+* Slide switches to select options
+* Leds to show USB, VCC, VPP
+* 33 ohm resistors on JTAG data lines
+* Smaller
+
+The CJMCU-232H version:  
+* USB-A
+* PLCC-44 socket
+* Jumpers to select options
+* Cheaper (232H board from aliexpress)
+
 ## Adafruit 2264  
 ![](PCB/out/ATF150x_uPRG.jpg)
 ![](PCB/out/ATF150x_uPRG.2.jpg)
