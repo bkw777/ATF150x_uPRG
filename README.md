@@ -29,14 +29,16 @@ The CJMCU-232H version:
 * Cheaper (232H board from aliexpress)
 
 ## Adafruit 2264  
+
+DigiKey BOM (including the Adafruit 2264 and JTAG cable):  
+https://www.digikey.com/short/pd883vn2
+
 ![](PCB/out/ATF150x_uPRG.jpg)
 ![](PCB/out/ATF150x_uPRG.2.jpg)
 ![](PCB/out/ATF150x_uPRG.3.jpg)
 ![](PCB/out/ATF150x_uPRG.f.jpg)
 ![](PCB/out/ATF150x_uPRG.b.jpg)
 ![](PCB/out/ATF150x_uPRG.svg)
-
-DigiKey BOM (including the Adafruit 2264 and JTAG cable): https://www.digikey.com/short/pd883vn2
 
 
 ## CJMCU-232H  
