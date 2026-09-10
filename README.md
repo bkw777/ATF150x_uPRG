@@ -40,6 +40,8 @@ https://www.digikey.com/short/nvr0cz3h
 ![](PCB/out/ATF150x_uPRG.b.jpg)
 ![](PCB/out/ATF150x_uPRG.svg)
 
+[v008 PCB at OSHPark](https://oshpark.com/shared_projects/vBad4JZN)
+
 
 ## CJMCU-232H  
 ![](PCB/out/ATF150x_232H.jpg)
