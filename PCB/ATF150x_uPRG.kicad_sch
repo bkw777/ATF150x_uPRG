@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "ATF150x_uPRG")
-		(date "2026-09-06")
-		(rev "005")
+		(date "2026-09-13")
+		(rev "006")
 		(company "Brian K. White")
 		(comment 1 "CC-BY-SA")
 		(comment 2 "github.com/bkw777/ATF150x_uPRG")
@@ -2449,6 +2449,107 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:VPP"
 			(power)
 			(pin_numbers
@@ -2643,6 +2744,12 @@
 		(uuid "11ce6d83-b032-40cf-aa6f-880af3a671a3")
 	)
 	(junction
+		(at 60.96 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "21144d90-470d-42f8-bb7d-7a3f9ca60979")
+	)
+	(junction
 		(at 171.45 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2665,6 +2772,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "360bde42-8fae-4988-a001-b68979245b7c")
+	)
+	(junction
+		(at 63.5 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4870b576-e536-4d80-9e04-f71bba72d26f")
 	)
 	(junction
 		(at 156.21 121.92)
@@ -2701,6 +2814,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "771518d7-b986-466c-b07f-5d87427ec943")
+	)
+	(junction
+		(at 138.43 121.92)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9fd0c95c-54d6-40bc-a973-320bd6ff5798")
 	)
 	(junction
 		(at 101.6 121.92)
@@ -2817,6 +2936,16 @@
 			(type default)
 		)
 		(uuid "05765d66-0127-4480-89aa-8c66bbc07c14")
+	)
+	(wire
+		(pts
+			(xy 60.96 54.61) (xy 60.96 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a0a2489-9f5f-47ac-a248-930317811f13")
 	)
 	(wire
 		(pts
@@ -2957,6 +3086,16 @@
 			(type default)
 		)
 		(uuid "3e88c995-1d90-4d5a-a593-2232d429b55b")
+	)
+	(wire
+		(pts
+			(xy 63.5 59.69) (xy 63.5 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42d9957f-3c6a-4bfc-97d9-c87ad10053c8")
 	)
 	(wire
 		(pts
@@ -3170,16 +3309,6 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 54.61) (xy 60.96 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bde62f80-e5ec-4062-9d33-c204b27b6c83")
-	)
-	(wire
-		(pts
 			(xy 138.43 127) (xy 142.24 127)
 		)
 		(stroke
@@ -3227,16 +3356,6 @@
 			(type default)
 		)
 		(uuid "dd37f202-559b-4cf9-8934-e52e0a9110cd")
-	)
-	(wire
-		(pts
-			(xy 63.5 59.69) (xy 63.5 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e0384f8b-83b1-4119-b9a6-d060fd5ba1fe")
 	)
 	(wire
 		(pts
@@ -3568,7 +3687,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "IC REG CHARG PUMP 12V 30MA 8SOIC"
+			(at 127 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "MAX662ACSA"
 			(at 127 128.27 0)
 			(effects
 				(font
@@ -3774,7 +3902,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "datasheets/AOA0000C301.pdf"
 			(at 228.6 76.2 0)
 			(effects
 				(font
@@ -3783,8 +3911,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, small symbol"
+		(property "Description" "RES SMD 10K OHM 5% 1/8W 0805"
 			(at 228.6 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "ERJ-6GEYJ103V"
+			(at 228.6 76.2 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3802,6 +3939,82 @@
 			(project "ATF150x_uPRG"
 				(path "/3e45ca3e-9961-418d-8cac-a91b9d092e47"
 					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "000_LOCAL:R")
+		(at 228.6 88.9 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "10bba64d-08f0-48e7-a52b-e4cdf47b3fab")
+		(property "Reference" "R3"
+			(at 228.6 83.312 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 228.6 85.852 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "000_LOCAL:R_0805"
+			(at 228.6 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheets/AOA0000C301.pdf"
+			(at 228.6 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RES SMD 10K OHM 5% 1/8W 0805"
+			(at 228.6 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "ERJ-6GEYJ103V"
+			(at 228.6 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9698fdb2-99a5-4b5c-a79d-24425d168c16")
+		)
+		(pin "2"
+			(uuid "bcc47a47-076a-497d-b3a0-79ef6076a2d2")
+		)
+		(instances
+			(project "ATF150x_uPRG"
+				(path "/3e45ca3e-9961-418d-8cac-a91b9d092e47"
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -3874,6 +4087,82 @@
 		)
 	)
 	(symbol
+		(lib_id "000_LOCAL:R")
+		(at 228.6 101.6 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "11808aac-b636-44f5-9b2a-5d0d8b881bcb")
+		(property "Reference" "R4"
+			(at 228.6 96.012 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 228.6 98.552 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "000_LOCAL:R_0805"
+			(at 228.6 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheets/AOA0000C301.pdf"
+			(at 228.6 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RES SMD 10K OHM 5% 1/8W 0805"
+			(at 228.6 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "ERJ-6GEYJ103V"
+			(at 228.6 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cb48b0e1-13ee-450c-be72-3b6b7b92a263")
+		)
+		(pin "2"
+			(uuid "db088f12-13cb-4590-9c10-887df2a2dde1")
+		)
+		(instances
+			(project "ATF150x_uPRG"
+				(path "/3e45ca3e-9961-418d-8cac-a91b9d092e47"
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "000_LOCAL:LED")
 		(at 237.49 88.9 180)
 		(unit 1)
@@ -3890,7 +4179,7 @@
 				)
 			)
 		)
-		(property "Value" "VPP"
+		(property "Value" "RED"
 			(at 237.49 85.852 0)
 			(effects
 				(font
@@ -3916,7 +4205,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "LED RED DIFFUSED 0805 SMD"
+			(at 237.49 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "B1701USD-20D000114U1930"
 			(at 237.49 88.9 0)
 			(effects
 				(font
@@ -3957,7 +4255,7 @@
 				)
 			)
 		)
-		(property "Value" "PWR"
+		(property "Value" "GREEN"
 			(at 237.49 98.552 0)
 			(effects
 				(font
@@ -3983,7 +4281,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "LED GREEN DIFFUSED 0805 SMD"
+			(at 237.49 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "B1701NG--20D000314U1930"
 			(at 237.49 101.6 0)
 			(effects
 				(font
@@ -4011,13 +4318,13 @@
 		(lib_id "000_LOCAL:Adafruit_2264")
 		(at 63.5 80.01 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "213a5950-1a41-4dfb-94a7-a518c0f538ac")
 		(property "Reference" "J1"
-			(at 65.278 69.596 0)
+			(at 67.056 69.342 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4026,7 +4333,7 @@
 			)
 		)
 		(property "Value" "Adafruit_2264"
-			(at 65.278 72.136 0)
+			(at 66.802 71.882 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4043,7 +4350,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "datasheets/adafruit-ft232h-breakout.pdf"
 			(at 62.23 102.87 0)
 			(effects
 				(font
@@ -4054,6 +4361,15 @@
 		)
 		(property "Description" "Adafruit FT232H Breakout v2"
 			(at 62.23 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "Adafruit 2264"
+			(at 63.5 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4140,32 +4456,35 @@
 		)
 	)
 	(symbol
-		(lib_id "000_LOCAL:R")
-		(at 228.6 101.6 270)
+		(lib_id "power:PWR_FLAG")
+		(at 63.5 107.95 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "22999607-d950-4a68-9ff9-9dd8f5fe7cf6")
-		(property "Reference" "R4"
-			(at 228.6 96.012 90)
+		(fields_autoplaced yes)
+		(uuid "2c8d93fc-cda1-42e2-a8d5-8ae163437039")
+		(property "Reference" "#FLG03"
+			(at 61.595 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Value" "10k"
-			(at 228.6 98.552 90)
+		(property "Value" "PWR_FLAG"
+			(at 58.42 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Footprint" "000_LOCAL:R_0805"
-			(at 228.6 101.6 0)
+		(property "Footprint" ""
+			(at 63.5 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4174,7 +4493,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 228.6 101.6 0)
+			(at 63.5 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4182,8 +4501,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, small symbol"
-			(at 228.6 101.6 0)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 63.5 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4192,15 +4511,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "b27f2242-846b-4424-95fd-c010a46dd6f8")
-		)
-		(pin "2"
-			(uuid "983c0422-27ba-401e-bfa4-f8141185d5d9")
+			(uuid "68831980-3540-4d88-8f2d-7b48d3541ee5")
 		)
 		(instances
 			(project "ATF150x_uPRG"
 				(path "/3e45ca3e-9961-418d-8cac-a91b9d092e47"
-					(reference "R4")
+					(reference "#FLG03")
 					(unit 1)
 				)
 			)
@@ -4266,75 +4582,6 @@
 			(project "ATF150x_uPRG"
 				(path "/3e45ca3e-9961-418d-8cac-a91b9d092e47"
 					(reference "#PWR011")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "000_LOCAL:C")
-		(at 114.3 116.84 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "315fb649-d60e-4ae3-b188-2e3493e02e7d")
-		(property "Reference" "C3"
-			(at 116.078 115.824 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1u"
-			(at 116.078 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "000_LOCAL:C_0805"
-			(at 114.3 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 114.3 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 114.3 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9c4320cf-10f1-4814-973b-9e4803bf429c")
-		)
-		(pin "2"
-			(uuid "f812f21f-cb01-4af2-8a03-e1a9800a8d05")
-		)
-		(instances
-			(project "ATF150x_uPRG"
-				(path "/3e45ca3e-9961-418d-8cac-a91b9d092e47"
-					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -4407,73 +4654,6 @@
 	)
 	(symbol
 		(lib_id "000_LOCAL:R")
-		(at 228.6 88.9 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4b30bffb-651c-4d14-8ccb-2fc840231185")
-		(property "Reference" "R3"
-			(at 228.6 83.312 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 228.6 85.852 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "000_LOCAL:R_0805"
-			(at 228.6 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 228.6 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 228.6 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a9e766d5-6f54-4379-b143-3db9c529f46a")
-		)
-		(pin "2"
-			(uuid "ef43b586-3ebc-44d0-8f30-7cc5615fba58")
-		)
-		(instances
-			(project "ATF150x_uPRG"
-				(path "/3e45ca3e-9961-418d-8cac-a91b9d092e47"
-					(reference "R3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "000_LOCAL:R")
 		(at 165.1 121.92 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4515,8 +4695,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, small symbol"
+		(property "Description" "RES SMD 2.2K OHM 5% 1/8W 0805"
 			(at 165.1 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "ERJ-6GEYJ222V"
+			(at 165.1 121.92 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4606,13 +4795,91 @@
 	)
 	(symbol
 		(lib_id "000_LOCAL:C")
+		(at 156.21 125.73 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "638e45ca-8ce5-4a08-a6c4-edbc841e6834")
+		(property "Reference" "C7"
+			(at 157.988 124.714 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1u"
+			(at 157.988 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "000_LOCAL:C_0805"
+			(at 156.21 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 156.21 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CAP0805 X7R 1UF 10% 50V"
+			(at 156.21 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "GMC21X7R105K50NT"
+			(at 156.21 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "13cf6a0b-5a81-4775-9159-8304cbc115b3")
+		)
+		(pin "2"
+			(uuid "a0c644b3-429b-41b4-b207-87084ca7a738")
+		)
+		(instances
+			(project "ATF150x_uPRG"
+				(path "/3e45ca3e-9961-418d-8cac-a91b9d092e47"
+					(reference "C7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "000_LOCAL:C")
 		(at 107.95 116.84 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "5f87f059-5fbf-457f-a41b-c3f3521b0174")
+		(uuid "780f020e-313c-4426-a8e4-7b254700487c")
 		(property "Reference" "C2"
 			(at 109.728 115.824 0)
 			(effects
@@ -4649,7 +4916,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" "CAP0805 X7R 1UF 10% 50V"
+			(at 107.95 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "GMC21X7R105K50NT"
 			(at 107.95 116.84 0)
 			(effects
 				(font
@@ -4659,15 +4935,94 @@
 			)
 		)
 		(pin "1"
-			(uuid "4610bc20-7c40-46a3-8479-71cad985c6a6")
+			(uuid "d640d573-5e57-4144-9929-9f23ef4bbe59")
 		)
 		(pin "2"
-			(uuid "862c2360-a3f0-4edd-b13c-fe23001e86e5")
+			(uuid "45128b42-4a0a-4fca-8c05-6af8509765cf")
 		)
 		(instances
 			(project "ATF150x_uPRG"
 				(path "/3e45ca3e-9961-418d-8cac-a91b9d092e47"
 					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "000_LOCAL:C")
+		(at 111.76 129.54 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7ace6431-7ed4-4c97-a8f5-4976dc77a1c6")
+		(property "Reference" "C4"
+			(at 109.982 128.524 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1u"
+			(at 109.982 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "000_LOCAL:C_0805"
+			(at 111.76 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 111.76 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CAP0805 X7R 1UF 10% 50V"
+			(at 111.76 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "GMC21X7R105K50NT"
+			(at 111.76 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3258d2b0-34f4-4803-8189-8924ee0f381c")
+		)
+		(pin "2"
+			(uuid "c5a2cb3a-f971-4b13-a071-733ab76e36c1")
+		)
+		(instances
+			(project "ATF150x_uPRG"
+				(path "/3e45ca3e-9961-418d-8cac-a91b9d092e47"
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -4690,7 +5045,7 @@
 				)
 			)
 		)
-		(property "Value" "VCC"
+		(property "Value" "AMBER"
 			(at 237.49 73.152 0)
 			(effects
 				(font
@@ -4716,7 +5071,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "LED AMBER DIFFUSED 0805 SMD"
+			(at 237.49 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "B1701UY--20D000214U1930"
 			(at 237.49 76.2 0)
 			(effects
 				(font
@@ -4806,11 +5170,78 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 138.43 121.92 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8f32c37f-a7e1-409d-937b-6220bd4b86f0")
+		(property "Reference" "#FLG04"
+			(at 138.43 120.015 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 138.43 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 138.43 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 138.43 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 138.43 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "15e86981-6396-46a7-bb11-7e783d72a7bb")
+		)
+		(instances
+			(project "ATF150x_uPRG"
+				(path "/3e45ca3e-9961-418d-8cac-a91b9d092e47"
+					(reference "#FLG04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "000_LOCAL:Jumper_3_Bridged12")
 		(at 177.8 119.38 270)
 		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
+		(exclude_from_sim no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "99264860-6974-40e0-b89f-fff3c3fbb63b")
@@ -4848,8 +5279,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Jumper, 3-pole, pins 1+2 closed/bridged"
+		(property "Description" "CONN HEADER R/A 3POS 2.54MM"
 			(at 177.8 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "PRPC003SBAN-M71RC"
+			(at 177.8 119.38 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4942,75 +5382,6 @@
 		)
 	)
 	(symbol
-		(lib_id "000_LOCAL:C")
-		(at 149.86 125.73 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ab449703-c7a5-4c7f-a106-e25d1a130050")
-		(property "Reference" "C4"
-			(at 151.638 124.714 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1u"
-			(at 151.638 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "000_LOCAL:C_0805"
-			(at 149.86 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 149.86 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 149.86 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f2c12eec-7b86-4b58-8d4a-35521c6a4466")
-		)
-		(pin "2"
-			(uuid "40203059-294f-414c-baff-776c3644d137")
-		)
-		(instances
-			(project "ATF150x_uPRG"
-				(path "/3e45ca3e-9961-418d-8cac-a91b9d092e47"
-					(reference "C4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "ATF2FT232HQ-rescue:VCC-power")
 		(at 139.7 57.15 90)
 		(mirror x)
@@ -5079,16 +5450,15 @@
 	)
 	(symbol
 		(lib_id "000_LOCAL:C")
-		(at 111.76 129.54 0)
-		(mirror y)
+		(at 149.86 125.73 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "bb07cbfe-4c42-4561-9456-702596474832")
+		(uuid "ba022fd9-7de5-4f15-aeca-2740aad79b24")
 		(property "Reference" "C6"
-			(at 109.982 128.524 0)
+			(at 151.638 124.714 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5097,7 +5467,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 109.982 130.81 0)
+			(at 151.638 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5106,7 +5476,7 @@
 			)
 		)
 		(property "Footprint" "000_LOCAL:C_0805"
-			(at 111.76 129.54 0)
+			(at 149.86 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5115,7 +5485,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 111.76 129.54 0)
+			(at 149.86 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5123,8 +5493,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 111.76 129.54 0)
+		(property "Description" "CAP0805 X7R 1UF 10% 50V"
+			(at 149.86 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "GMC21X7R105K50NT"
+			(at 149.86 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5133,10 +5512,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "1d4dbefd-fb06-4500-852d-703256261b8e")
+			(uuid "231b33bf-185a-40cf-a01c-609288d5d761")
 		)
 		(pin "2"
-			(uuid "9fa0344c-2f74-4dce-8be8-dd1b93e6ec30")
+			(uuid "b1b98c4c-6ecf-4759-b307-d8245715ea0e")
 		)
 		(instances
 			(project "ATF150x_uPRG"
@@ -5214,6 +5593,84 @@
 		)
 	)
 	(symbol
+		(lib_id "000_LOCAL:C")
+		(at 114.3 116.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c40db129-e4ce-47b2-b1ef-b1ae7215f1f4")
+		(property "Reference" "C3"
+			(at 116.078 115.824 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1u"
+			(at 116.078 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "000_LOCAL:C_0805"
+			(at 114.3 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 114.3 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CAP0805 X7R 1UF 10% 50V"
+			(at 114.3 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "GMC21X7R105K50NT"
+			(at 114.3 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b7a11c6f-aa8f-4af7-973d-08b1e7a8241f")
+		)
+		(pin "2"
+			(uuid "14d25eef-dc19-4a5c-bfbb-2318861928a4")
+		)
+		(instances
+			(project "ATF150x_uPRG"
+				(path "/3e45ca3e-9961-418d-8cac-a91b9d092e47"
+					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "000_LOCAL:Altera JTAG-A+VPP")
 		(at 127 82.55 0)
 		(unit 1)
@@ -5257,7 +5714,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "CONN HEADER VERT 10POS 2.54MM"
+			(at 127 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "302-S101"
 			(at 127 82.55 0)
 			(effects
 				(font
@@ -5306,11 +5772,78 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 63.5 69.85 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cf84809d-841d-4604-8bea-acdb063d7c8e")
+		(property "Reference" "#FLG02"
+			(at 65.405 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 68.58 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 63.5 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 63.5 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 63.5 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "98474704-b3fd-4e4c-9987-ccd0600eea31")
+		)
+		(instances
+			(project "ATF150x_uPRG"
+				(path "/3e45ca3e-9961-418d-8cac-a91b9d092e47"
+					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "000_LOCAL:Jumper_4_Bridged12")
 		(at 177.8 55.88 270)
 		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
+		(exclude_from_sim no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "d9b87be3-424d-45ba-b8e2-2081bb5d0154")
@@ -5348,8 +5881,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Jumper, 4-pole, pins 1+2 closed/bridged"
+		(property "Description" "CONN HEADER R/A 4POS 2.54MM"
 			(at 177.8 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "PRPC004SBAN-M71RC"
+			(at 177.8 55.88 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5380,83 +5922,14 @@
 	)
 	(symbol
 		(lib_id "000_LOCAL:C")
-		(at 156.21 125.73 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e24f218f-fa8c-47f9-b0c2-d7ccd2098212")
-		(property "Reference" "C5"
-			(at 157.988 124.714 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1u"
-			(at 157.988 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "000_LOCAL:C_0805"
-			(at 156.21 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 156.21 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 156.21 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "83fabcf4-ac53-4160-aec0-3ac3e99873da")
-		)
-		(pin "2"
-			(uuid "65ef121d-d135-450b-b49d-68e7cefc118e")
-		)
-		(instances
-			(project "ATF150x_uPRG"
-				(path "/3e45ca3e-9961-418d-8cac-a91b9d092e47"
-					(reference "C5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "000_LOCAL:C")
 		(at 142.24 129.54 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "eacd80ab-6ab5-486b-acf9-b8731df56d8f")
-		(property "Reference" "C7"
+		(uuid "e8d638c6-1e0d-4102-8b38-7dafa9ac96eb")
+		(property "Reference" "C5"
 			(at 144.018 128.524 0)
 			(effects
 				(font
@@ -5492,7 +5965,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" "CAP0805 X7R 1UF 10% 50V"
+			(at 142.24 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "GMC21X7R105K50NT"
 			(at 142.24 129.54 0)
 			(effects
 				(font
@@ -5502,15 +5984,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "d95ad619-9939-403e-911f-7687c3dc8c6f")
+			(uuid "a4021902-98fa-4e77-a0c2-e5aa8baf2c0d")
 		)
 		(pin "2"
-			(uuid "cdd1cec3-5a17-4106-b816-c4a5cda9118b")
+			(uuid "1d35e5ff-1d66-4134-a451-44b7e9b699dd")
 		)
 		(instances
 			(project "ATF150x_uPRG"
 				(path "/3e45ca3e-9961-418d-8cac-a91b9d092e47"
-					(reference "C7")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -5576,6 +6058,73 @@
 			(project "ATF150x_uPRG"
 				(path "/3e45ca3e-9961-418d-8cac-a91b9d092e47"
 					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 60.96 69.85 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ecf81b40-41de-44e5-912a-4b292cc637ac")
+		(property "Reference" "#FLG01"
+			(at 59.055 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 55.88 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 60.96 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 60.96 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 60.96 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "927b525a-40cd-44c5-a3d5-17a8a1d856bd")
+		)
+		(instances
+			(project "ATF150x_uPRG"
+				(path "/3e45ca3e-9961-418d-8cac-a91b9d092e47"
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)
@@ -5692,7 +6241,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" "CAP0805 X7R 1UF 10% 50V"
+			(at 101.6 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "GMC21X7R105K50NT"
 			(at 101.6 116.84 0)
 			(effects
 				(font
