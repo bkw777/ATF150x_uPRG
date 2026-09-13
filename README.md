@@ -14,20 +14,6 @@ There are 2 versions. Both versions provide:
   * programmer supplies 5V VCC to target
   * target supplies own VCC
 
-The Adafruit 2264 version:  
-* USB-C
-* Connect to 2264 without sockets
-* Slide switches to select options
-* Leds to show USB, VCC, VPP
-* 33 ohm resistors on JTAG data lines
-* Smaller
-
-The CJMCU-232H version:  
-* USB-A
-* PLCC-44 socket
-* Jumpers to select options
-* Cheaper (232H board from aliexpress)
-
 ## Adafruit 2264  
 
 DigiKey BOM (including the Adafruit 2264 and 2 types of JTAG cable):  
@@ -40,7 +26,9 @@ https://www.digikey.com/short/nvr0cz3h
 ![](PCB/out/ATF150x_uPRG.b.jpg)
 ![](PCB/out/ATF150x_uPRG.svg)
 
-[v008 PCB at OSHPark](https://oshpark.com/shared_projects/vBad4JZN)
+BOM ![ATF150x_uPRG.bom.csv](PCB/out/ATF150x_uPRG.bom.csv)
+
+[v010 PCB at OSHPark](https://oshpark.com/shared_projects/TQWUH0NG)
 
 
 ## CJMCU-232H  
