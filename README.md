@@ -22,6 +22,7 @@ There are 2 versions. Both versions provide:
 ![](PCB/out/ATF150x_uPRG.3.jpg)
 ![](PCB/out/ATF150x_uPRG.f.jpg)
 ![](PCB/out/ATF150x_uPRG.b.jpg)
+![](COVER/out/ATF150x_uPRG.png)
 ![](PCB/out/ATF150x_uPRG.svg)
 
 [v010 PCB at OSHPark](https://oshpark.com/shared_projects/TQWUH0NG)  
@@ -30,6 +31,7 @@ There are 2 versions. Both versions provide:
 <!-- _sw version with slide switches and 33 ohms on the jtag lines
 https://www.digikey.com/short/nvr0cz3h
 -->
+Cover [ATF150x_uPRG.stl](COVER/out/ATF150x_uPRG.stl)
 
 ----
 
