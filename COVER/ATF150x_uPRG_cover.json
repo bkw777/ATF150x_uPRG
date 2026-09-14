@@ -1,0 +1,12 @@
+{
+    "fileFormatVersion": "1",
+    "parameterSets": {
+        "New set 1": {
+            "$fn": "36",
+            "in": "25.399999999999999",
+            "o": "0.10000000000000001",
+            "pcb_h": "1.6000000000000001",
+            "pcb_stl": "lib\/PCB.stl"
+        }
+    }
+}

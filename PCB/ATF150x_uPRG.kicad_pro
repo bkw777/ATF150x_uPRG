@@ -793,7 +793,7 @@
       "plot": "GERBER_${TITLE}_${REVISION}",
       "pos_files": "GERBER_${TITLE}_${REVISION}",
       "specctra_dsn": "",
-      "step": "",
+      "step": "../COVER/lib/PCB.stl",
       "svg": "",
       "vrml": ""
     },
