@@ -24,8 +24,8 @@ There are 2 versions. Both versions provide:
 ![](PCB/out/ATF150x_uPRG.b.jpg)
 ![](PCB/out/ATF150x_uPRG.svg)
 
-[v010 PCB at OSHPark](https://oshpark.com/shared_projects/TQWUH0NG)
-[BOM @ DigiKey](https://www.digikey.com/short/crp904w2)
+[v010 PCB at OSHPark](https://oshpark.com/shared_projects/TQWUH0NG)  
+[BOM @ DigiKey](https://www.digikey.com/short/crp904w2)  
 (includes the Adafruit 2264 and 2 types of JTAG cable)
 <!-- _sw version with slide switches and 33 ohms on the jtag lines
 https://www.digikey.com/short/nvr0cz3h
