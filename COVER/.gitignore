@@ -2,4 +2,4 @@
 *.gcode
 *.3mf
 *.FCBak
-out/*.stl
+
