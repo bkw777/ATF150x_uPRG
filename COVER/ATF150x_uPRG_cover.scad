@@ -6,40 +6,30 @@
 
 pcb_stl = "lib/PCB.stl";
 
-$fn = 36;            // arc smoothness
+$fn = 36;              // arc smoothness
 in = 25.4;
 mil = in/1000;
 
-wt = 2;              // wall thickness
+wall_thickness = 1.6;
+wt = wall_thickness;
 min_wall_thickness = 0.8;
-fitment_clearance = 0.4;
+fitment_clearance = 0.2;
+fc = fitment_clearance;
 
-pcb_w = 1500*mil;    // hat pcb long dim
-pcb_d = 900*mil;     // hat pcb short dim
-pcb_h = 1.6;         // pcb thickness
-pcb_r = 100*mil;     // pcb corner radius
+pcb_w = 1500*mil;      // pcb long dim
+pcb_d = 900*mil;       // pcb short dim
+pcb_h = 1.6;           // pcb thickness
+pcb_r = 100*mil;       // pcb corner radius
 
-pin_ins_h = 100*mil; // pin header insulator height
+insulator_h = 100*mil; // pin header insulator height
 
 interior_major_radius = 100*mil;
 
-// both pcbs and pin header insulator
-pcb_stack = pcb_h + pin_ins_h + pcb_h;
+pcb_stack = pcb_h + insulator_h + pcb_h;
 
-// "top" & "bottom" are flipped
-// because in the end the bottom of the hat
-// is the exposed surface with jumpers and leds.
+bottom_components_height = 3.2;
 
-// top-side components of 2264 (bottom of final assembly)
-bottom_components_height = 3;
-
-// bottom-side components of hat (top of final assembly) 
 top_components_height = 5;
-
-fc = fitment_clearance;
-o = 0.1;             // overcut/overlap/overextend
-
-// top height
 th = top_components_height;
 
 // bottom interior height
@@ -48,9 +38,8 @@ bih = pcb_stack + bottom_components_height;
 // bottom exterior height
 beh = bih + fc + wt;
 
-mwt = min_wall_thickness;
-ew = pcb_w; //+wt*2; // exterior width
-ed = mwt + fc + pcb_d + fc + mwt; // exterior depth
+ew = pcb_w+1;        // exterior width
+ed = pcb_d + fc*2 + min_wall_thickness*2; // exterior depth
 eh = th + beh;       // exterior height
 ir = interior_major_radius; // interior radius
 ra = ir+wt;          // major radius
